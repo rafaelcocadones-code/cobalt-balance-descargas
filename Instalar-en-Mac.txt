@@ -1,0 +1,31 @@
+COBALT BALANCE PARA MAC — versión de prueba 1.1 (sin firma de Apple)
+
+¿CUÁL BAJO?
+  - Mac con chip Apple (M1, M2, M3, M4…):  Cobalt-Balance-1.1.0-Mac-arm64.zip
+  - Mac con procesador Intel:              Cobalt-Balance-1.1.0-Mac-x64.zip
+  Para saberlo: menú  > Acerca de esta Mac. Si dice "Chip Apple M…", es la arm64.
+  Requiere macOS 11 (Big Sur) o más nuevo.
+
+INSTALAR
+  1. Haz doble clic en el .zip. Aparece "Cobalt Balance".
+  2. Arrástralo a la carpeta Aplicaciones.
+  3. Ábrelo con doble clic. La primera vez, la Mac dirá que no puede verificar
+     el programa. Pulsa "Listo" (no lo muevas a la basura).
+  4. Ve a  > Configuración del Sistema > Privacidad y seguridad.
+     Baja hasta el final y pulsa "Abrir de todas formas". Escribe tu contraseña.
+  5. Vuelve a abrir Cobalt Balance y pulsa "Abrir". Desde ahí abre normal.
+
+SI DICE QUE EL PROGRAMA "ESTÁ DAÑADO"
+  No está dañado: es la protección de Apple para programas sin firma.
+  Abre la app Terminal, pega esta línea y pulsa Enter:
+      xattr -cr /Applications/Cobalt\ Balance.app
+  Luego ábrelo otra vez.
+
+DÓNDE QUEDAN LOS DATOS
+  En el menú Archivo > Abrir carpeta de datos.
+  (~/Library/Application Support/Cobalt Balance, con copias diarias en "respaldos")
+
+PARA VENDERLO
+  Esta versión es para probar. Antes de venderla hay que inscribir a Cobalt Studio LLC
+  en el Apple Developer Program, firmarla y enviarla a revisión de Apple. Así el cliente
+  la abre con doble clic, sin los pasos 3 a 5.
